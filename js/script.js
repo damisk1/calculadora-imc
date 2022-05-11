@@ -24,7 +24,7 @@ btnCalcular.addEventListener('click', function(peso, altura){
     altura = alturaDigitada.value.replace(',','.');
     let imc = (peso / (altura**2)).toFixed(2);
 
-    if(peso == 0 || altura == 0 || !(Number(imc))) {
+    if(peso == 0 || altura == 0 || isNaN(parseFloat(imc))) {
         alert('Preencha corretamente todos os campos')
     } else{
         resultadoImc.textContent = imc;
