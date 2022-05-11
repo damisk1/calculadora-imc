@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="IMC, calculadora de imc, calcula imc">
+    <meta name="author" content="Gabriel Damiski">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule seu IMC</title>
+    <meta name="description" content="Calcule seu IMC (Índice de Massa Corporal)">
+    <!-- css -->
+    <link rel="preload" href="./css/style.min.css" as="style">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de IMC</h1>
+        <p>Índice de Massa Corporal</p>
+    </header>
+    <main>
+        <div class="main-bg">
+            <div class="container">
+                <div class="form">
+                    <div>
+                        <div class="form_peso">
+                            <label for="peso">Peso:</label>
+                            <input type="text" name="peso" id="peso" placeholder="(ex.: 69,2)"> 
+                        </div>
+                        <div class="form_altura">
+                            <label for="altura">Altura:</label>
+                            <input type="text" name="altura" id="altura" maxlength="4" placeholder=" (ex.: 1,70)">
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button class="btn-calc">Calcular IMC</button>
+                        <button class="btn-limpa">limpar</button>
+                    </div>
+                    <div>
+                        <span class="seuImc">Seu IMC: </span><span class="resultado-imc"></span>
+                    </div>
+                </div>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Classificação</th>
+                                <th>IMC</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="abaixo-peso">
+                                <td>Abaixo do Peso</td>
+                                <td>Abaixo de 18,5</td>
+                            </tr>
+                            <tr class="peso-normal">
+                                <td>Peso Normal</td>
+                                <td>18,5 - 24,9</td>
+                            </tr>
+                            <tr class="sobrepeso">
+                                <td>Sobrepeso</td>
+                                <td>25 - 29,9</td>
+                            </tr>
+                            <tr class="obesidade-I">
+                                <td>Obesidade Grau I</td>
+                                <td>30 - 34,9</td>
+                            </tr>
+                            <tr class="obesidade-II">
+                                <td>Obesidade Grau II</td>
+                                <td>40 ou Maior</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> 
+            </div>
+        </div>
+        <div class="sections">
+            <section>
+                <h2>O que é IMC?</h2>
+                <p>O índice de massa corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Trata-se de um método fácil e rápido para a avaliação do nível de gordura de cada pessoa, sendo, por isso, um preditor internacional de obesidade adotado pela Organização Mundial da Saúde (OMS).</p>
+            </section>
+            <section>
+                <h2>Como é calculado o IMC?</h2>
+                <p>Para determinar o IMC, basta dividir o peso do indivíduo (massa) pela sua altura ao quadrado. A massa deve ser definida em quilogramas (kg) e a altura em metros (m).</p>
+                <img src="./img/imgImc.jpg" alt="formula do calculo do imc">
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/damisk1" target="_blank">Gabriel Damiski</a></p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

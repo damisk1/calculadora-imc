@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {font-size: 16px;}
+body {
+    font-family: sans-serif;
+    padding: 2rem 0;
+    background-color: #fff;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+}
+header {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    color: #001d3d;
+}
+header h1 {
+    font-size: 3rem;
+    font-family: 'Koulen', cursive;
+    font-weight: 400;
+    line-height: 1;
+}
+header p {font-size: 1.5rem;}
+label {
+    display: inline-block;
+    color: #fff;
+    margin-bottom: .5rem;
+    padding-left: .5rem;
+    font-size: 1.5rem;
+}
+input {
+    padding: .5rem .5rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid #1D3557;
+    color: #fff;
+    transition: box-shadow .3s ease;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+input::placeholder {
+    color: #1D3557;
+    font-weight: 400;
+}
+input:focus {
+    background-color:#457B9D;
+    box-shadow: -1px 2px #FF9F1C;
+    border-radius: 2px;
+}
+button {
+    width: 100%;
+    padding: .6rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    border: none;
+    color: #fff;
+    background-color: #FF9F1C;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+button:hover {background-color: #e48f19;}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+td, th {padding: 1rem;}
+th {background-color: #ccc;}
+tr:nth-child(odd) {background-color: #eee;}
+tr:nth-child(even) {background-color: #fff;}
+footer {
+    width: 100%;
+    height: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+footer p {font-size: 11px;}
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: #001d3d;
+    font-size: 14px;
+}
+footer a:hover::after {
+    width: 100%;
+    transition: all .3s ease-in;
+}
+footer a::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    background-color: #1D3557;
+}
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+}
+
