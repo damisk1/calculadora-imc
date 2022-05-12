@@ -59,14 +59,17 @@ function mostraNaTabela(imc){
     limpaTabela();
     if(imc < 18.5){
         classificaoTabela[0].classList.add('yellow');
-    }else if(imc >= 18.5 && imc <=24.9){
+    }else if(imc >= 18.5 && imc <25){
         classificaoTabela[1].classList.add('green');
-    }else if(imc >= 25 && imc <=29.9){
+    }else if(imc >= 25 && imc <30){
         classificaoTabela[2].classList.add('yellow');
     }
-    else if(imc >= 30 && imc <=34.9){
+    else if(imc >= 30 && imc <35){
         classificaoTabela[3].classList.add('orange');
-    }else {
+    }else if(imc >= 35 && imc <40){
         classificaoTabela[4].classList.add('red');
+    }
+    else {
+        classificaoTabela[5].classList.add('red');
     }
 }
